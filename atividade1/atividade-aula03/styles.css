@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: white;
+    color: #333;
+}
+
+.principal{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border-bottom: 2px solid blue;
+}
+
+.logo img{
+    height: 65px;
+    border-radius: 50%;
+    border: 2px solid black;
+
+}
+
+.links a{
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+    margin-left: 25px;
+    font-size: 18px;
+    transition: color 0.3s, transform 1s;
+    display: inline-block;
+}
+.links a:hover{
+    color:crimson;
+    transform: scale(1.2);
+
+}
+
+.parte-central{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 10px;
+}
+
+.foto img{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 40px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.378);
+
+} 
+
+.informacoes {
+    max-width: 600px;
+
+}
+.textos h1{
+    font-size: 3rem;
+    color: blue;
+    margin-bottom: 20px;
+}
+.textos p{
+    font-size: 1.2rem;
+    line-height: 1.4;
+    color: #555;
+}
+
+.footer{
+    margin-top: 50px;
+    padding: 40px;
+    background-color: blue;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+}
+.footer h1{
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+.footer img{
+    height: 100px;
+    width: auto;
+    margin-top: 15px;
+    filter:brightness(1.8) contrast(1.2)
+}
