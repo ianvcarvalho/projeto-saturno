@@ -21,54 +21,55 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 5px;
-    border-bottom: 2px solid blue;
+    border-bottom: 2px solid black;
 }
-
 .logo img{
     height: 65px;
     border-radius: 50%;
     border: 2px solid black;
-
+    box-shadow: 3px 3px 1px gray;
 }
-
-.links a{
+.logo:hover{
+    transform: scale(1.05);
+    transition: filter 0.3s, transform 0.3s;
+}
+.links-topo a{
     text-decoration: none;
-    color: blue;
+    color: rgb(0, 0, 0);
     font-weight: bold;
     margin-left: 25px;
     font-size: 18px;
     transition: color 0.3s, transform 1s;
     display: inline-block;
 }
-.links a:hover{
+.links-topo a:hover{
     color:crimson;
-    transform: scale(1.2);
-
+    transform: scale(1.15);
 }
 
 .parte-central{
     display: flex;
     align-items: center;
     gap: 40px;
-    padding: 10px;
+    padding: 50px;
 }
-
 .foto img{
     width: 350px;
     height: 350px;
+    margin-top: 50px;;
     object-fit: cover;
     border-radius: 40px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.378);
-
+    padding: 5px;
+    background-color: black;
 } 
-
 .informacoes {
     max-width: 600px;
 
 }
 .textos h1{
     font-size: 3rem;
-    color: blue;
+    color: rgb(0, 0, 0);
     margin-bottom: 20px;
 }
 .textos p{
@@ -78,20 +79,32 @@ body{
 }
 
 .footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     margin-top: 50px;
-    padding: 40px;
-    background-color: blue;
+    padding: 62px;
+    background-color: black;
     color: white;
     border-radius: 20px;
-    text-align: center;
 }
-.footer h1{
+.links-footer a{
+    text-decoration: none;
     margin-bottom: 15px;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    transition: color 0.3s, transform 1s;
+    display: inline-block;
+}
+.links-footer a:hover{
+    color:crimson;
+    transform: scale(1.10);
 }
 .footer img{
     height: 100px;
     width: auto;
-    margin-top: 15px;
-    filter:brightness(1.8) contrast(1.2)
+    filter: brightness(50);
+    margin-right: 40px;;
 }
